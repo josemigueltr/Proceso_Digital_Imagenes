@@ -1,0 +1,60 @@
+
+.subtitle{
+  color: #b7d7e8;
+}
+
+#myRange {
+  overflow: hidden;
+  width: 50%;
+}
+
+.textoError {
+    font-family: "Courrier New";
+    font-size: 20px;
+    color: red;
+}
+
+.estiloboton {
+  background-color: #c2d4dd;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.navbar {
+  background-color: #c2d4dd;
+}
+
+
+.accordion {
+  background-color: #14213D;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  /*background-color: #c2d4dd;*/
+  background-color: #28427b;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
+body {
+  font-size: 25px;
+}
