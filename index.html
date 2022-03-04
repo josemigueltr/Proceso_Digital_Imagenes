@@ -87,29 +87,92 @@
                                 oninput="limpiar()">
                         </div>
                         <hr width=100%  align="right"  size=100 color="#FF0000">
-                    <!--Filtro RGB-->
-                        <div>
-                            <br>
-                            <h4><b>FILROS RGB 🎨</b> </h4>
-                            <br>
-                            <div>
-                                <button id="red"  class="btn btn-danger"  onclick="menu(this)">Rojo</button>
-                                <button id="green" class="btn btn-success" onclick="menu(this)">Verde</button>
-                                <button id="blue"  class="btn btn-primary"  onclick="menu(this)">Azul</button>
-                            </div>  
+                   
+                         <!--SECCION DE ""-->
+                        <div class="row">
+                                <!--Filtro RGB-->
+                                <div class="col-sm-6">
+                                    <br>
+                                    <h4><b>FILROS RGB 🎨</b> </h4>
+                                    <br>
+                                    <div>
+                                        <button id="red"  class="btn btn-danger"  onclick="menu(this)">Rojo</button>
+                                        <button id="green" class="btn btn-success" onclick="menu(this)">Verde</button>
+                                        <button id="blue"  class="btn btn-primary"  onclick="menu(this)">Azul</button>
+                                    </div>      
+                                
+                                </div>
+
+                                <!--Filtro de efecto de alto contraste  e inverso-->
+                                <div class="col-sm-6">
+                                    <br>
+                                    <h4><b>Alto contraste e inverso ✨⚡</b> </h4>
+                                    <br>
+                                    <div>
+                                        <button id="contraste"  class="btn btn-primary"  onclick="menu(this)">Alto contraste</button>
+                                        <button id="inverso"  class="btn btn-info" onclick="menu(this)">Inverso</button>
+                                    </div>  
+                                </div>
+                          </div>
+                           
+                        <!---TAREA 2-->  
+                        <!--Division en 2 columnas-->
+                        <div class="row">
+                            <!---PRIMERA PARTE DE COLUMNA-->
+                            <div class="col-sm-6">
+                                <br>
+                                <h4><b>FILROS DE CONVOLUCION</b> </h4>
+                                <br>
+                                <div>
+                                    <button id="blur"  class="btn btn-primary"  onclick="menu2(this)">Blur</button>
+                                    <button id="motion"  class="btn btn-info" onclick="menu2(this)">Motion Blur</button>
+                                    <button id="emboss"  class="btn btn-primary"  onclick="menu2(this)">Emboss</button>
+                                    <button id="sharpen"  class="btn btn-info" onclick="menu2(this)">Sharpen</button>
+                                </div>  
+                                <br>   
+                                <!---Filtro de bordes-->
+                                <br>
+                                <h4><b>FILTROS DE BUSQUEDA DE BORDES</b> </h4>
+                                <br>
+                                <div>
+                                    <button id="borde_horizontal"  class="btn btn-primary"  onclick="menu2(this)">Horizontal</button>
+                                    <button id="borde_vertical"  class="btn btn-info" onclick="menu2(this)">vertical</button>
+                                    <button id="borde_45"  class="btn btn-primary"  onclick="menu2(this)">45° Grados</button>
+                                    <button id="borde_todas"  class="btn btn-info" onclick="menu2(this)">Todas direcciones</button>
+                                </div> 
+                            </div>
+
+                            <!---SEGUNDA PARTE DE COLUMNA-->
+                            <div class="col-sm-6">
+                                <br>
+                                <h4><b>Filtro medio y mediano</b> </h4>
+                                <br>
+                                <div>
+                                    <button id="promedio"  class="btn btn-primary"  onclick="menu2(this)">promedio</button>
+                                    <br>
+                                    <button id="mediano3"  class="btn btn-info" onclick="menu2(this)">mediano 3x3</button>
+                                    <button id="mediano5"  class="btn btn-info" onclick="menu2(this)">mediano 5x5</button>
+                                    <button id="mediano9"  class="btn btn-info" onclick="menu2(this)">mediano 9x9</button>
+                                </div>  
+                                <br>
+                                <h4><b>Componentes RBB</b> </h4>
+                                <br>
+                                <div>
+                                    <b>Introduce el valor para las componentes RGB</b><br>
+                                    <br>
+                                    <b>Componente R:</b><br>
+                                    <input id="inputR" type="text" size="4"><br>
+                                    <b>Componente G:</b><br>
+                                    <input id="inputG" type="text" size="4"><br>
+                                    <b>Componente B:</b><br>
+                                    <input id="inputB" type="text" size="4"><br>
+                                    <button id="componentes" onclick="menu2(this)">Aplicar</button>
+                                </div>  
+                            </div>
+                            
                         </div>
                         <hr width=100%  align="right"  size=100 color="#FF0000">
-                    <!--Filtro de efecto de alto contraste  e inverso-->
-                        <div>
-                            <br>
-                            <h4><b>Alto contraste e inverso ✨⚡</b> </h4>
-                            <br>
-                            <div>
-                                <button id="contraste"  class="btn btn-primary"  onclick="menu(this)">Alto contraste</button>
-                                <button id="inverso"  class="btn btn-info" onclick="menu(this)">Inverso</button>
-                            </div>  
-                        </div>
-                        <hr width=100%  align="right"  size=100 color="#FF0000">
+
                         <!---boton para limpiar la imagen-->
                         <div>
                             <br>
@@ -151,6 +214,7 @@
        </div>
     <script src="index.js"></script>
     <script src="tareas/tarea1.js"></script>
+    <script src="tareas/tarea2.js"></script>
     <script src="vista/vista.js"></script>
 </body>
 
