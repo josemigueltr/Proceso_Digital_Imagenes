@@ -163,7 +163,6 @@ function menu2(opcion) {
             convolucion(matriz_promedio);
             break;
         case "mediano3":
-            alert("Mediana 3x3");
             convolucion(matriz_mediana3);
             break;
         case "mediano5":
@@ -178,61 +177,54 @@ function menu2(opcion) {
         }
 }
 
-
 /**
  * Funcion que aplica una matriz de convolucion a una imagen para obtener un filtro
  * @param {*} matriz Matriz de convolucion que se aplicara a la imagen. 
  */
 function convolucion(matriz) {
-    //REvisamos que halla una imagen cargada
+    //Revisamos que halla una imagen cargada
     if(isCanvasBlank(canvas)){
         alert("No hay ninguna imagen cargada.");
         return;
     }
-
     //Obtenemos el contexto del canvas
     var context = newCanvas.getContext("2d");
     var image = context.getImageData(0, 0, newCanvas.width, newCanvas.height);
     let newImageData = context.createImageData(newCanvas.width, newCanvas.height);
     var data = image.data;
+    //dimensiones de la matriz
     let mx = Math.floor(matriz.tam / 2);
     let my = Math.floor(matriz.tam / 2);
-    let entrada_x, entrada_y;
-    let color_index;
-    let new_color;
-
-
-    function auxColorIndex(x, y, width) {
-        let color_pos = x * 4 + y * (width * 4);
-        return { R: color_pos, G: color_pos + 1, B: color_pos + 2, A: color_pos + 3 };
-    }
-
-
+    
+    //Recorremos la imagen para aplicar la matriz de convolucion
     for (let i = mx; i < newCanvas.width - mx; i++) {
         for (let j = my; j < newCanvas.height - my; j++) {
-            new_color = { R: 0, G: 0, B: 0 };
+            //R-0 G-1 B-2
+            let color=[0,0,0];
 
             for (let entrada = 0; entrada < matriz.valores.length; entrada++) {
-                entrada_x = (entrada % matriz.tam) - mx;
-                entrada_y = Math.floor(entrada / matriz.tam) - my;
+                let x = (entrada % matriz.tam) - mx;
+                let y = Math.floor(entrada / matriz.tam) - my;
+                let index=[0,0,0,0]
 
-                color_index = auxColorIndex(i + entrada_x, j + entrada_y, newCanvas.width);
-
-                new_color.R += data[color_index.R] * matriz.valores[entrada];
-                new_color.G += data[color_index.G] * matriz.valores[entrada];
-                new_color.B += data[color_index.B] * matriz.valores[entrada];
+                let coord = (i+x) * 4 + (j+y) * (newCanvas.width * 4);
+                for(let i=0;i<4;i++)
+                    index[i]=coord+i;
+                
+                for(let k=0;k<3;k++)
+                    color[k]+=data[index[k]]*matriz.valores[entrada];
             }
-
-            color_index = auxColorIndex(i, j, newCanvas.width);
-            newImageData.data[color_index.R] = new_color.R;
-            newImageData.data[color_index.G] = new_color.G;
-            newImageData.data[color_index.B] = new_color.B;
-            newImageData.data[color_index.A] = data[color_index.A];
+            let index=[0,0,0,0]
+            let coord = i * 4 + j * (newCanvas.width * 4);
+            for(let i=0;i<4;i++)
+                index[i]=coord+i;
+            
+            for(let k=0;k<3;k++)
+                newImageData.data[index[k]] = color[k];
+            newImageData.data[index[3]] = data[index[3]];
         }
     }
-
     context.putImageData(newImageData, 0, 0)
-
 }
 
 /**
