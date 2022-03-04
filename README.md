@@ -32,3 +32,27 @@ Inverso
 FILTRO DE BRILLO
 Brillo (sumar o restar una constante a cada tripleta RGB, o sea, a cada pixel.
 ```
+## TAREA 2
+**Implpementacion de los filtros**
+
+```
+FILTRO BLUR
+Blur (difumina una imagen - la hace borrosa)
+Motion Blur (efecto de foto movida)
+Find edges (encuentran bordes)
+	- en vertical
+	- en horizontal
+	- a 45 grados
+	- en todas las direcciones
+
+FILTRO SHARPEN
+Sharpen (hace que la imagen sea más precisa)
+Emboss (encuentra bordes y los pone en relieve (3D))
+
+FILTRO PROMEDIO
+Filtro promedio (mean)
+Filtro mediano
+
+Poner una mica RGB sobre las imagen
+
+```
