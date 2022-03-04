@@ -163,13 +163,13 @@ function menu2(opcion) {
             convolucion(matriz_promedio);
             break;
         case "mediano3":
-            convolucion(matriz_mediana3);
+            medianFilter(matriz_mediana3);
             break;
         case "mediano5":
-            convolucion(matriz_mediana5);
+            medianFilter(matriz_mediana5);
             break;
         case "mediano9":
-            convolucion(matriz_mediana9);
+            medianFilter(matriz_mediana9);
             break;
         case "componentes":
             componentesRGB(imageData);
@@ -262,3 +262,73 @@ function componentesRGB(image){
     context.putImageData(image, 0, 0);
 }
 
+
+/**
+ * Funcion que aplica el filto de mediana a una imagen
+ * @param {*} matriz 
+ * @returns 
+ */
+function medianFilter(matriz){
+  //Revisamos que halla una imagen cargada
+  if(isCanvasBlank(canvas)){
+    alert("No hay ninguna imagen cargada.");
+    return;
+}
+//Obtenemos el contexto del canvas
+var context = newCanvas.getContext("2d");
+var image = context.getImageData(0, 0, newCanvas.width, newCanvas.height);
+let newImageData = context.createImageData(newCanvas.width, newCanvas.height);
+var data = image.data;
+//dimensiones de la matriz
+let mx = Math.floor(matriz.tam / 2);
+let my = Math.floor(matriz.tam / 2);
+
+//Recorremos la imagen para aplicar la matriz de convolucion
+for (let i = mx; i < newCanvas.width - mx; i++) {
+    for (let j = my; j < newCanvas.height - my; j++) {
+        //Almeceno los valores rgb
+        //R-0 G-1 B-2
+        let color=[[],[],[]];
+
+        for (let entrada = 0; entrada < matriz.valores.length; entrada++) {
+            let x = (entrada % matriz.tam) - mx;
+            let y = Math.floor(entrada / matriz.tam) - my;
+            let index=[0,0,0,0]
+
+            //Redireccionamiento de coordenadas
+            let coord = (i+x) * 4 + (j+y) * (newCanvas.width * 4);
+            for(let i=0;i<4;i++)
+                index[i]=coord+i;
+            
+            for(let k=0;k<3;k++)
+                color[k].push(data[index[k]]*matriz.valores[entrada]);
+        }
+
+        let index=[0,0,0,0]
+        let coord = i * 4 + j * (newCanvas.width * 4);
+        for(let i=0;i<4;i++)
+            index[i]=coord+i;
+        
+        for(let k=0;k<3;k++)
+            newImageData.data[index[k]] = calculateMedian(color[k]);
+        newImageData.data[index[3]] = data[index[3]];
+    }
+}
+context.putImageData(newImageData, 0, 0)
+}
+
+
+/**
+ * Funcion que regresa la mediana de un arreglo  de numeros
+ * @param {*} numbers arreglo de numeros 
+ * @returns mediana de un arreglo
+ */
+function calculateMedian(numbers) {
+    const sorted = numbers.slice().sort((a, b) => a - b);
+    const middle = Math.floor(sorted.length / 2);
+    if (sorted.length % 2 === 0) {
+        return (sorted[middle - 1] + sorted[middle]) / 2;
+    }
+
+    return sorted[middle];
+}
