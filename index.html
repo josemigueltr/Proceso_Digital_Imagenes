@@ -116,6 +116,7 @@
                           </div>
                            
                         <!---TAREA 2-->  
+                  
                         <!--Division en 2 columnas-->
                         <div class="row">
                             <!---PRIMERA PARTE DE COLUMNA-->
@@ -150,6 +151,7 @@
                                 <div>
                                     <button id="promedio"  class="btn btn-primary"  onclick="menu2(this)">promedio</button>
                                     <br>
+                                    <br>
                                     <button id="mediano3"  class="btn btn-info" onclick="menu2(this)">mediano 3x3</button>
                                     <button id="mediano5"  class="btn btn-info" onclick="menu2(this)">mediano 5x5</button>
                                     <button id="mediano9"  class="btn btn-info" onclick="menu2(this)">mediano 9x9</button>
@@ -159,19 +161,68 @@
                                 <br>
                                 <div>
                                     <b>Introduce el valor para las componentes RGB</b><br>
-                                    <br>
-                                    <b>Componente R:</b><br>
-                                    <input id="inputR" type="text" size="4"><br>
-                                    <b>Componente G:</b><br>
-                                    <input id="inputG" type="text" size="4"><br>
-                                    <b>Componente B:</b><br>
-                                    <input id="inputB" type="text" size="4"><br>
+                                    <input id="inputR"  placeholder="R" type="text" size="4">
+                                    <input id="inputG"   placeholder="G"type="text" size="4">
+                                    <input id="inputB"  placeholder="B" type="text" size="4">
                                     <button id="componentes" onclick="menu2(this)">Aplicar</button>
                                 </div>  
                             </div>
                             
                         </div>
                         <hr width=100%  align="right"  size=100 color="#FF0000">
+                        <!---TAREA 3-->
+                                
+                            <div class="row">
+                                <!---PRIMERA PARTE DE COLUMNA-->
+                                <div class="col-sm-6">
+                                    <br>
+                                    <h4><b>FILTRO LETRAS</b> </h4>
+                                    <p>(Por defecto se usa la letra M para estos filtros)</p>
+                                    <br>
+                                    <div>
+                                        <button id="colorLetra"  class="btn btn-primary"  onclick="menu3(this)">Letra color</button>
+                                        <button id="grisLetra"  class="btn btn-info" onclick="menu3(this)">Letra Gris</button>
+                                    </div>  
+                
+                                    <br>
+                                    <h4><b>FILTROS DE LETRAS USANDO LOS SIMBOLOS {MNH#QUAD0Y2$%+.} </b> </h4>
+                                    <br>
+                                    <div>
+                                        <button id="simbolos1"  style="background-color: hsla(167, 31%, 25%, 0.146);" class="btn"  onclick="menu3(this)">Letras B/N</button>
+                                        <button id="simbolos2" style="background-color: #5a615b;" class="btn btn-info" onclick="menu3(this)">Combinacion E 1,3</button>
+                                        <button id="simbolos3"  style="background-color: #434343;" class="btn btn-primary"  onclick="menu3(this)">Combinacion E 2,3</button>
+                                    </div> 
+                                </div>
+
+                                <!---SEGUNDA PARTE DE COLUMNA-->
+                                <div class="col-sm-6">
+                                    <br>
+                                    <h4><b>Filtro Letrero</b> </h4>
+                                    <div>
+                                        <b>Introduce el letrero que quieres colocar en la imagen</b><br>
+                                        <input id="inputLetrero" class="form-control"  placeholder="Texto" type="text" >
+                                        <button id="letrero"  class="btn btn-warning"  onclick="menu3(this)">Aplicar</button>
+                                    </div>  
+                                    <br>
+                                    <h4><b>Filtro letras de cartas (NAIPES)</b> </h4>
+                                    <br>
+                                    <div>
+                                        <button  style="background-color: hsla(60, 72%, 68%, 0.468);" class="btn"  id="naipes" onclick="menu3(this)">Naipes</button>
+                                    </div> 
+
+                                    <br>
+                                    <h4><b>Filtro letras de fichas domino</b> </h4>
+                                    <br>
+                                    <div>
+                                        <button  style="background-color: hsla(0, 2%, 91%, 0.947);" class="btn"  id="domino-blanco" onclick="menu3(this)">Domino Blanco</button>
+                                        <button  style="background-color: hsla(60, 8%, 3%, 0.468);" class="btn"  id="domino-negro" onclick="menu3(this)">Domino Negro</button>
+                                    </div>  
+                                </div>
+                                
+                            </div>
+
+
+
 
                         <!---boton para limpiar la imagen-->
                         <div>
@@ -188,7 +239,6 @@
 
 
        
-
         <!-- Seccion parta ver la imagen-->
         <div class="textoError"></div>
            
@@ -215,6 +265,7 @@
     <script src="index.js"></script>
     <script src="tareas/tarea1.js"></script>
     <script src="tareas/tarea2.js"></script>
+    <script src="tareas/tarea3.js"></script>
     <script src="vista/vista.js"></script>
 </body>
 
