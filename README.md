@@ -50,9 +50,37 @@ Sharpen (hace que la imagen sea más precisa)
 Emboss (encuentra bordes y los pone en relieve (3D))
 
 FILTRO PROMEDIO
-Filtro promedio (mean)
-Filtro mediano
 
+FILTRO MEDIANO
+
+
+FILTRO COMPONENTES RGB
 Poner una mica RGB sobre las imagen
 
 ```
+
+
+## TAREA 3
+**Implpementacion de los filtros**
+```
+FILTRO LETRAS DE COLORES
+	- Foto con una letra con colores.
+	
+FILTRO LETRAS GRISES
+	- Foto con una letra pero en tono de gris
+	
+FILTRO EN GRISES CON LETRA EN BLANCO Y NEGRO
+	-Foto en grises con letras en blanco y negro {MNH#QUAD0Y2$%+. }
+	
+FILTRO COMBINACIONES
+	- Combinar efecto 1 con efecto 3
+	- Combinar efecto 2 con efecto 3
+
+FILTROS ADICIONALES
+
+	- Usar las letras de un texto con los colores de la región
+	- Usar el tipo de letras de cartas, para crear la imagen
+	- Usar el tipo de letras dominó, para crear la imagen (puntos blancos con fondo negro)
+	- Usar el tipo de letras dominó, para crear la imagen (puntos negros con fondo blanco)
+```
+
