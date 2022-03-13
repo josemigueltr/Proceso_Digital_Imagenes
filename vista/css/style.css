@@ -1,4 +1,24 @@
 
+@font-face {
+  font-family: 'naipes';
+  src: url(../fonts/PLAYCRDS.TTF);
+  font-style: regular;
+}
+
+
+@font-face {
+  font-family: 'domino-blanco';
+  src: url(../fonts/Lasvwd__.ttf);
+  font-style: regular;
+}
+
+@font-face {
+  font-family: 'domino-negro';
+  src: url(../fonts/Lasvbld_.ttf);
+  font-style: regular;
+}
+
+
 .subtitle{
   color: #b7d7e8;
 }
