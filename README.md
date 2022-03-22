@@ -83,4 +83,11 @@ FILTROS ADICIONALES
 	- Usar el tipo de letras dominó, para crear la imagen (puntos blancos con fondo negro)
 	- Usar el tipo de letras dominó, para crear la imagen (puntos negros con fondo blanco)
 ```
+## TAREA 4
+**Implpementacion de los filtros**
+```
+FILTRO QUE ELIMINA MARCA DE AGUA DE IMAGENES EN BLANCO Y NEGRO
+	- Filtro que remueve una marca de agua de una imagen en blanco y negro
+```
+
 
