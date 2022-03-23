@@ -345,7 +345,7 @@ function SimbolosAux(promedio) {
         return '+';
     else if (promedio >= 226 && promedio <= 239)
         return '.';
-    else if (promedio >= 240 && rgbPromedio <= 255)
+    else if (promedio >= 240 && promedio <= 255)
         return ' ';
 
 }
