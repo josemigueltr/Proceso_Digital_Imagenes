@@ -109,6 +109,8 @@ function gris(imageData,val) {
  * @param {*} imageData imagen a la que se aplicara el filtro
  */ 
 function brillo() {
+
+    
     var value = document.getElementById("myRange").value;
     value=parseInt(value);
     var context = newCanvas.getContext("2d");
