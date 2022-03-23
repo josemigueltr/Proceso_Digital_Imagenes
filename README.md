@@ -89,5 +89,20 @@ FILTROS ADICIONALES
 FILTRO QUE ELIMINA MARCA DE AGUA DE IMAGENES EN BLANCO Y NEGRO
 	- Filtro que remueve una marca de agua de una imagen en blanco y negro
 ```
+### RESULTADOS OBTENIDOS
+Estos son los resultados que se obtuvieron al aplicar el filtr que remueve la marca de agua con las imagenes de prueba
 
+**Imagen 1**
+![image](https://user-images.githubusercontent.com/41601470/159789589-363071e6-10c3-4d5c-ac36-2eb4329ba25b.png)
 
+**Imagen 2**
+![image](https://user-images.githubusercontent.com/41601470/159789782-4ab6cd83-24d8-493a-b954-642ec9af6e0e.png)
+
+**Imagen 3**
+![image](https://user-images.githubusercontent.com/41601470/159789823-97128e3d-ef6f-407c-9a0f-935d1f50edce.png)
+
+**Imagen 4**
+![image](https://user-images.githubusercontent.com/41601470/159789846-089f42d8-434a-4fe8-b17c-5297c66b93b8.png)
+
+**Imagen 5**
+![image](https://user-images.githubusercontent.com/41601470/159789868-0a3e4de1-2e07-4dcd-b6cd-b041590c7d0f.png)
