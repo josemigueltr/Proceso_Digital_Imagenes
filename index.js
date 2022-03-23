@@ -6,7 +6,8 @@ var newCanvas = document.getElementById('newImageCanvas');
 var ctx = canvas.getContext('2d');
 var newCtx = newCanvas.getContext('2d');
 var archivo;
-
+var image = new Image();
+var newImage = new Image();
 
 /**
  * Funcion que se encarga de cargar la imagen del sistema de archivos
@@ -28,8 +29,6 @@ function handleImage(e) {
  */
 var onReaderLoad = function(event) {
   // Se crea una imagen.
-  var image = new Image();
-  var newImage = new Image();
 
   image.src = event.target.result;
   newImage.src = event.target.result;
@@ -46,9 +45,11 @@ var onReaderLoad = function(event) {
   // ...ésta se dibuja en el canvas.
   newCtx.drawImage(newImage, 0, 0,canvas.width,canvas.height);
   }
-
 }
 
 function limpiar() {
+  if(archivo===undefined){
+    selectImage()
+    return}
   onReaderLoad(archivo);
 }
