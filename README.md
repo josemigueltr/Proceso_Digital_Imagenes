@@ -106,3 +106,26 @@ Estos son los resultados que se obtuvieron al aplicar el filtr que remueve la ma
 
 **Imagen 5**
 ![image](https://user-images.githubusercontent.com/41601470/159789868-0a3e4de1-2e07-4dcd-b6cd-b041590c7d0f.png)
+
+## TAREA 6
+**Implpementacion de los filtros**
+```
+FILTRO EFECTO OLEO 
+	- Filtro que aplica el efecto de pintura al oleo de una imagen
+```
+
+### RESULTADOS OBTENIDOS
+Estos son los resultados que se obtuvieron al aplicar el filtro de efecto de oleo a algunas imagenes
+
+**Imagen 1**
+![image](https://user-images.githubusercontent.com/41601470/164609666-84789368-0ccb-4505-b540-76cf9e156f08.png)
+
+**Imagen 2**
+![image](https://user-images.githubusercontent.com/41601470/164609925-c4b95a19-6325-4885-94a3-bfa8a4d6c279.png)
+
+**Imagen 3**
+(Mi favorita)
+![image](https://user-images.githubusercontent.com/41601470/164610021-03da8fad-3a67-4109-b133-e9361815b168.png)
+
+
+
