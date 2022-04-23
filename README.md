@@ -107,7 +107,32 @@ Estos son los resultados que se obtuvieron al aplicar el filtr que remueve la ma
 **Imagen 5**
 ![image](https://user-images.githubusercontent.com/41601470/159789868-0a3e4de1-2e07-4dcd-b6cd-b041590c7d0f.png)
 
+
 ## TAREA 6
+**Implpementacion de los filtros**
+```
+FILTRO EFECTO IMAGENES RECURSIVAS
+	- Filtro que aplica el efecto de imagenes recursivas a color
+	- Filtro que aplica el efecto de imagenes recursivas a blanco y negro
+```
+
+### RESULTADOS OBTENIDOS
+
+Estos son los resultados que se obtuvieron al aplicar el filtro de imagenes recursivas a color a algunas imagenes
+
+**Imagen 1**
+![image](https://user-images.githubusercontent.com/41601470/164876060-e19e9875-7bef-4589-a2e1-b06441099150.png)
+**Imagen 2**
+![image](https://user-images.githubusercontent.com/41601470/164876205-04727672-d751-4684-af6f-f074586dee40.png)
+
+Estos son los resultados que se obtuvieron al aplicar el filtro de imagenes recursivas a blanco y negro a algunas imagenes
+
+**Imagen 1**
+![image](https://user-images.githubusercontent.com/41601470/164876123-2553c935-2bc5-4337-951c-c80b8ac82d82.png)
+**Imagen 2**
+![image](https://user-images.githubusercontent.com/41601470/164876260-708c3e19-cb86-4d20-bbd6-0cc5be752cbe.png)
+
+## TAREA 7
 **Implpementacion de los filtros**
 ```
 FILTRO EFECTO OLEO 
