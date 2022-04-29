@@ -153,4 +153,23 @@ Estos son los resultados que se obtuvieron al aplicar el filtro de efecto de ole
 ![image](https://user-images.githubusercontent.com/41601470/164610021-03da8fad-3a67-4109-b133-e9361815b168.png)
 
 
+## TAREA 8
+**Implpementacion de los filtros**
+```
+FILTRO EFECTO CONTRASTE
+(imagenes en tonos de grises)
+	- Filtro que aplica el efecto de un mejor contraste a una imagen en tonos de grises
+	  para mejorarla
+```
+### RESULTADOS OBTENIDOS
+Estos son los resultados que se obtuvieron al aplicar el filtro de efecto de oleo a algunas imagenes
+
+**Imagen 1**
+![image](https://user-images.githubusercontent.com/41601470/165877477-8c904704-466d-4e91-900f-547c946ccee4.png)
+
+**Imagen 2**
+![image](https://user-images.githubusercontent.com/41601470/165877602-9e0faf51-22af-4d81-ae9b-307b9afc140b.png)
+
+**Imagen 3**
+![image](https://user-images.githubusercontent.com/41601470/165877732-6da957ad-2154-4eea-8ac4-484f10ac2a1e.png)
 
