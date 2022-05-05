@@ -22,7 +22,6 @@
             <center><p>Facultad de ciencias UNAM 2022-2</p></center>
             <center><p>José Miguel Toledo Reyes</p></center>
         </div>
-
         <!-- Botón para escoger la imagen por manipular -->
         <div>
             <b>Escoge una imagen:</b>
@@ -30,7 +29,6 @@
                 <input type="file" id="imageLoader" name="imageLoader" />
             </span>
         </div>
-
         <div>
             <!-- Botones para aplicar los filtros a la imagen actual -->
             <button class="accordion" style="padding-left: 0px; color: white;"><b>Filtros Disponibles (Expandir)</b></button>
@@ -75,7 +73,6 @@
                             <button id="botonM" onclick="mosaico()">Aplicar</button>
                         </div>
                         <hr width=100%  align="right"  size=100 color="#FF0000">
-                    
                     <!-- Filtro de efecto de brillo -->
                         <div>
                             <br>
@@ -250,7 +247,6 @@
                                 <div class="col-sm-6">
                                     <br>
                                     <h4><b>FILTRO IMAGEN RECURSIVA</b> <canvas id="auxcanvas"></canvas> </h4>
-                                   
                                     <br>
                                     <div>
                                         <button id="recursiva-bn"  style="background-color: hsla(60, 11%, 14%, 0.468);" class="btn"  onclick="menu6(this)">Recursiva B/N</button>
@@ -266,6 +262,27 @@
                                 
                         </div>
 
+                        <div class="row">
+                            <!---PRIMERA PARTE DE COLUMNA-->
+                            <div class="col-sm-6">
+                                <br>
+                                <h4><b>FILTRO DITHERING</b> </h4>
+                                <div>
+                                    <button id="d-random"    class="btn btn-danger"  onclick="menu9(this)">Dithering Random </button>
+                                    <button id="d-disperso"  class="btn btn-danger"  onclick="menu9(this)">Dithering Disperso </button>
+                                    <button id="d-ordenado"  class="btn btn-danger"  onclick="menu9(this)">Dithering Ordenado </button>
+                                </div> 
+                                <br>
+
+                            </div>
+                            <!---SEGUNDA PARTE DE COLUMNA-->
+                            <div class="col-sm-6">
+                               
+                            </div>
+                            
+                    </div>
+
+
                         <!---boton para limpiar la imagen-->
                         <div>
                             <br>
@@ -279,8 +296,6 @@
             </div>
         </div>
 
-
-       
         <!-- Seccion parta ver la imagen-->
         <div class="textoError"></div>
            
@@ -312,6 +327,7 @@
     <script src="tareas/tarea5.js"></script>
     <script src="tareas/tarea6.js"></script>
     <script src="tareas/tarea8.js"></script>
+    <script src="tareas/tarea9.js"></script>
     <script src="vista/vista.js"></script>
        
 </body>
