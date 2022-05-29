@@ -173,3 +173,25 @@ Estos son los resultados que se obtuvieron al aplicar el filtro de efecto de ole
 **Imagen 3**
 ![image](https://user-images.githubusercontent.com/41601470/165877732-6da957ad-2154-4eea-8ac4-484f10ac2a1e.png)
 
+
+## TAREA 9
+**Implpementacion de los filtros**
+```
+FILTRO DITHERIN
+(imagenes en tonos de grises)
+	- Filtro que  aplica el efecto de ditherin a una imagen , hay 3 tipos de diterin random , disperso y ordenado
+```
+
+### RESULTADOS OBTENIDOS
+Estos son los resultados que se obtuvieron al aplicar los 3 distintos tipos de ditherin a varias imagenes
+
+**ditherin random**
+![image](https://user-images.githubusercontent.com/41601470/170893901-5ec2a446-558c-49fa-b127-882798b0ac81.png)
+
+**ditherin disperso**
+![image](https://user-images.githubusercontent.com/41601470/170893921-41a7af47-4477-4563-be2c-ff912e878f1c.png)
+
+
+**ditherin ordenado**
+![image](https://user-images.githubusercontent.com/41601470/170893932-5ad12e37-f7f4-4159-b20b-28f04d8c03b2.png)
+
